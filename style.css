@@ -47,21 +47,22 @@ body {
 .logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 
 .logo img {
   height: 24px;
-  transform: scale(0.9);
   width: auto;
   object-fit: contain;
 }
 
 .logo span {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 600;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.5px;
+  line-height: 1;
 }
+
 
 
 nav a {
