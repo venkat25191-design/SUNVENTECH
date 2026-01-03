@@ -107,6 +107,16 @@ nav a:hover {
   font-size: 18px;
   letter-spacing: 0.3px;
 }
+.brand-inner {
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+}
+
+.brand-logo img {
+  width: 100px;
+}
+
 
 /* Hero */
 .hero {
