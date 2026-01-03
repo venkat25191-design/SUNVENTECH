@@ -51,8 +51,8 @@ body {
 }
 
 .logo img {
-  height: 26px;     /* smaller, logo-like */
-  max-height: 26px;
+  height: 24px;
+  transform: scale(0.9);
   width: auto;
   object-fit: contain;
 }
