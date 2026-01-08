@@ -32,12 +32,19 @@ body {
 
 /* Navbar */
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 18px 40px;
   backdrop-filter: blur(10px);
+  background: rgba(11, 15, 26, 0.6);
+  z-index: 1000;
 }
+
 
 /*.logo {
   font-size: 22px;
@@ -57,11 +64,11 @@ body {
 }
 
 .logo span {
-  font-size: 1.05rem;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  line-height: 1;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.6px;
 }
+
 
 
 
@@ -79,8 +86,9 @@ nav a:hover {
 }
 /* Brand banner */
 .brand-banner {
-  padding: 80px 40px 40px;
+  padding: 140px 40px 40px;
 }
+
 
 .brand-inner {
   max-width: 1100px;
