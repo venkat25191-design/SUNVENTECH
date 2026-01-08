@@ -98,6 +98,21 @@ body {
   font-weight: 700;
   letter-spacing: 0.5px;
 }*/
+.login-btn {
+  margin-left: 36px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #38bdf8, #2563eb);
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(56,189,248,0.5);
+}
 
 
 
