@@ -44,7 +44,7 @@
       We design intelligent, scalable, and secure digital solutions
       for next-generation businesses.
     </p>
-    <a href="#contact" class="cta">Let’s Talk</a>
+    <a href="javascript:void(0)" class="cta" id="openChat">Let’s Talk</a>
   </section>
 
   <!-- About -->
@@ -94,6 +94,26 @@
   <footer>
     © 2026 SunvenTech · Future-Ready Technology
   </footer>
+<!-- AI Chat Widget -->
+<div class="chat-overlay" id="chatOverlay"></div>
+
+<div class="chat-widget" id="chatWidget">
+  <div class="chat-header">
+    <span>SunvenTech AI</span>
+    <button id="closeChat">✕</button>
+  </div>
+
+  <div class="chat-messages" id="chatMessages">
+    <div class="bot-msg">
+      Hi 👋 I’m SunvenTech AI. How can I help you today?
+    </div>
+  </div>
+
+  <div class="chat-input">
+    <input type="text" id="chatInput" placeholder="Type your message…" />
+    <button id="sendMsg">Send</button>
+  </div>
+</div>
 
 </body>
 </html>
