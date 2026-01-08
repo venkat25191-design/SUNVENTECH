@@ -119,10 +119,6 @@ nav a:hover {
   padding-top: 160px;
 }
 
-.hero {
-  padding-top: 120px;
-}
-
 .brand-inner {
   max-width: 1100px;
   margin: auto;
@@ -160,6 +156,14 @@ nav a:hover {
 
 
 /* Hero */
+.hero {
+  padding-top: 220px;
+  padding-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centers button */
+  text-align: center;
+}
 
 .hero h1 {
   font-size: 46px;
