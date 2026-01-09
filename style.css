@@ -31,16 +31,34 @@ body {
 }
 
 /* Navbar */
+
+
+
 .navbar.banner-nav {
-  height: 110px;     /* enough room */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 110px;
   padding: 0 48px;
 }
 
-
 .nav-brand {
   display: flex;
-  align-items: center;   /* 🔥 keeps both vertically centered */
+  align-items: center;
   gap: 16px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  margin-left: 32px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 
@@ -69,22 +87,10 @@ body {
   font-size: 13px;
 }
 
-.nav-links a {
-  margin-left: 32px;
-  color: var(--text);
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 500;
-  opacity: 0.9;
-  line-height: 1;
-}
+
 
 .nav-links a:hover {
   color: var(--accent);
-}
-.nav-links {
-  display: flex;
-  align-items: center;   /* 🔥 THIS fixes the misalignment */
 }
 
 
