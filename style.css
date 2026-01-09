@@ -40,7 +40,7 @@ body {
   left: 0;
   width: 100%;
   height: 110px;
-  padding: 0 48px;
+  padding: 0 24px;
 
   display: flex;
   align-items: center;
@@ -59,16 +59,18 @@ body {
 .nav-brand {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
+  margin-left: auto;  /* pushes links to the right */
 }
 
+
 .nav-links a {
-  margin-left: 32px;
+  margin-left: 20px;
   color: var(--text);
   text-decoration: none;
   font-size: 16px;
