@@ -42,9 +42,9 @@ body {
 }
 
 .nav-container {
-  max-width: 1100px;        /* 🔥 KEY LINE */
-  margin: 0 auto;
+  max-width: 1100px;
   height: 100%;
+  margin: 0 auto;
   padding: 0 24px;
 
   display: flex;
@@ -56,6 +56,7 @@ body {
   display: flex;
   align-items: center;
 }
+
 
 
 
@@ -127,18 +128,6 @@ body {
 .login-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(56,189,248,0.5);
-}
-
-
-
-
-
-nav a {
-  margin-left: 20px;
-  color: var(--text);
-  text-decoration: none;
-  font-weight: 500;
-  opacity: 0.85;
 }
 
 nav a:hover {
