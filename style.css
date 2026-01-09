@@ -32,33 +32,25 @@ body {
 
 /* Navbar */
 .navbar.banner-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 90px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 24px;
-  background: linear-gradient(135deg, #0b1022, #0f3d4c);
-  backdrop-filter: blur(12px);
-  z-index: 1000;
-  overflow: hidden; /* 🔥 CRITICAL */
+  height: 110px;     /* enough room */
+  padding: 0 48px;
 }
+
 
 .nav-brand {
   display: flex;
-  flex-direction: column;   /* 👈 stack */
-  align-items: flex-start;
-  gap: 4px;
+  align-items: center;   /* 🔥 keeps both vertically centered */
+  gap: 16px;
 }
 
 
+
 .nav-brand img {
-  height: 96px;
-  transform: scale(1.15);   /* 👈 makes it feel bigger */
-  transform-origin: left center;
+  height: 84px;
+  max-height: 84px;
+  width: auto;
+  object-fit: contain;
+  display: block;
 }
 
 
@@ -68,15 +60,15 @@ body {
 }
 
 .nav-title {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 800;
-  letter-spacing: 0.8px;
+  line-height: 1.1;
 }
 
 .nav-tagline {
-  font-size: 14px;
-  color: var(--muted);
+  font-size: 13px;
 }
+
 .nav-links a {
   margin-left: 32px;
   color: var(--text);
@@ -171,7 +163,7 @@ nav a:hover {
 
 /* Hero */
 .hero {
-  padding-top: 220px;
+  padding-top: 170px;
   padding-bottom: 120px;
   display: flex;
   flex-direction: column;
