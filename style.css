@@ -54,8 +54,8 @@ body {
 }
 
 .nav-brand img {
-  height: 72px;
-  max-height: 72px;
+  height: 84px;
+  max-height: 84px;
   width: auto;
   max-width: 100%;
   object-fit: contain;
