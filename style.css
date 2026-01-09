@@ -49,12 +49,14 @@ body {
 
 .nav-brand {
   display: flex;
-  align-items: center;
-  gap: 20px;
+  flex-direction: column;   /* 👈 stack */
+  align-items: flex-start;
+  gap: 4px;
 }
 
+
 .nav-brand img {
-  height: 84px;
+  height: 96px;
   transform: scale(1.15);   /* 👈 makes it feel bigger */
   transform-origin: left center;
 }
