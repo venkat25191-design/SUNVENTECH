@@ -7,17 +7,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const chatInput = document.getElementById("chatInput");
   const chatMessages = document.getElementById("chatMessages");
 
-  // Safety check (prevents JS errors)
   if (!openChat || !chatWidget) return;
 
-  // Open chat
   openChat.addEventListener("click", () => {
     chatWidget.style.display = "flex";
     chatOverlay.style.display = "block";
     chatInput.focus();
   });
 
-  // Close chat
   closeChat.addEventListener("click", closeChatFn);
   chatOverlay.addEventListener("click", closeChatFn);
 
@@ -26,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
     chatOverlay.style.display = "none";
   }
 
-  // Send message
   sendMsg.addEventListener("click", sendMessage);
   chatInput.addEventListener("keydown", (e) => {
     if (e.key === "Enter") sendMessage();
@@ -39,13 +35,10 @@ document.addEventListener("DOMContentLoaded", () => {
     addMessage(text, "user");
     chatInput.value = "";
 
-    // Mock AI response (replace later)
     setTimeout(() => {
-      addMessage(
-        "🤖 Thanks for reaching out! Our AI assistant will respond shortly.",
-        "bot"
-      );
-    }, 600);
+      const reply = getBotReply(text);
+      addMessage(reply, "bot");
+    }, 500);
   }
 
   function addMessage(text, type) {
@@ -54,5 +47,36 @@ document.addEventListener("DOMContentLoaded", () => {
     msg.textContent = text;
     chatMessages.appendChild(msg);
     chatMessages.scrollTop = chatMessages.scrollHeight;
+  }
+
+  // 🔹 RULE-BASED LOGIC
+  function getBotReply(input) {
+    const msg = input.toLowerCase();
+
+    if (msg.includes("hi") || msg.includes("hello") || msg.includes("hey")) {
+      return "👋 Hello! Welcome to SunvenTech. How can I help you today?";
+    }
+
+    if (msg.includes("how are you")) {
+      return "😊 I’m doing great! How can I assist you today?";
+    }
+
+    if (msg.includes("service")) {
+      return "💼 We offer Web & App Development, Enterprise Software, IT Consulting, and Cloud Automation.";
+    }
+
+    if (msg.includes("about")) {
+      return "🏢 SunvenTech builds future-ready digital solutions using modern, scalable technology.";
+    }
+
+    if (msg.includes("contact") || msg.includes("email")) {
+      return "📧 You can contact us at sakthipria@gmail.com";
+    }
+
+    if (msg.includes("price") || msg.includes("cost")) {
+      return "💬 Pricing depends on project scope. Please share your requirement or contact us via email.";
+    }
+
+    return "🤖 I’m here to help! You can ask about our services, company, or contact details.";
   }
 });
