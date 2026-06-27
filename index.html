@@ -4,122 +4,389 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SunvenTech | Future-Ready Digital Solutions</title>
-
   <meta name="description" content="SunvenTech builds future-ready digital solutions with modern, scalable technology." />
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Background glow -->
-  <div class="bg-glow"></div>
+  <!-- Animated background -->
+  <div class="bg-canvas"></div>
+  <div class="bg-grid"></div>
 
   <!-- Navbar -->
-<header class="navbar banner-nav">
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/logofinal.png" alt="SunvenTech logo" />
+        <div class="nav-text">
+          <span class="nav-title">SunvenTech</span>
+          <span class="nav-tagline">Future-Ready Digital Solutions</span>
+        </div>
+      </a>
 
-  <div class="nav-container">
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#contact">Contact</a>
+        <a href="login.html" class="nav-cta">Get Started</a>
+      </nav>
 
-    <div class="nav-brand">
-      <img src="assets/logofinal.png" alt="SunvenTech logo" />
-      <div class="nav-text">
-        <span class="nav-title">SunvenTech</span>
-        <span class="nav-tagline">Future-Ready Digital Solutions</span>
-      </div>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+  </header>
 
-    <nav class="nav-links">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#services" class="mobile-link">Services</a>
+    <a href="#why-us" class="mobile-link">Why Us</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+    <a href="login.html" class="nav-cta mobile-link">Get Started</a>
   </div>
-
-</header>
-
-
-
-  <!-- Brand Banner -->
-
 
   <!-- Hero -->
   <section class="hero">
-    <h1>Building the Future of Technology</h1>
+    <div class="hero-badge">
+      <span class="dot"></span>
+      Now delivering next-gen digital solutions
+    </div>
+
+    <h1>
+      Building the <span class="gradient-text">Future</span><br />
+      of Technology
+    </h1>
+
     <p>
       We design intelligent, scalable, and secure digital solutions
-      for next-generation businesses.
+      for next-generation businesses — from web apps to enterprise platforms.
     </p>
-    <a href="javascript:void(0)" class="cta" id="openChat">Let’s Talk</a>
+
+    <div class="hero-actions">
+      <a href="javascript:void(0)" class="btn-primary" id="openChat">
+        Let's Talk ↗
+      </a>
+      <a href="#services" class="btn-secondary">
+        Explore Services →
+      </a>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="arrow"></div>
+    </div>
   </section>
 
+  <!-- Stats -->
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat-item animate-up">
+        <div class="stat-number" data-count="50">0</div>
+        <div class="stat-label">Projects Delivered</div>
+      </div>
+      <div class="stat-item animate-up" style="transition-delay:0.1s">
+        <div class="stat-number" data-count="30">0</div>
+        <div class="stat-label">Happy Clients</div>
+      </div>
+      <div class="stat-item animate-up" style="transition-delay:0.2s">
+        <div class="stat-number" data-count="5">0</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-item animate-up" style="transition-delay:0.3s">
+        <div class="stat-number" data-count="99">0</div>
+        <div class="stat-label">% Satisfaction</div>
+      </div>
+    </div>
+  </div>
+
   <!-- About -->
-  <section id="about" class="section glass">
-    <h2>About SunvenTech</h2>
-    <p>
-      SunvenTech is a forward-thinking technology company focused on
-      innovation, reliability, and simplicity. We help businesses
-      transform ideas into powerful digital experiences.
+  <section id="about" class="section">
+    <div class="section-label">About Us</div>
+    <h2 class="section-title">We Turn Ideas Into<br/>Digital Reality</h2>
+    <p class="section-sub">
+      SunvenTech is a forward-thinking technology company focused on innovation,
+      reliability, and simplicity.
     </p>
+
+    <div class="about-grid">
+      <div class="about-visual">
+        <div class="about-card animate-up">
+          <div class="about-icon">🚀</div>
+          <h3>Our Mission</h3>
+          <p>
+            We help businesses transform ideas into powerful digital experiences.
+            From startups to enterprises, we bring modern technology with strategic
+            thinking to every project we touch.
+          </p>
+          <div class="about-pills">
+            <span class="pill">Innovation</span>
+            <span class="pill">Reliability</span>
+            <span class="pill">Simplicity</span>
+            <span class="pill">Scalability</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-content animate-up" style="transition-delay:0.15s">
+        <div class="why-item" style="margin-bottom:20px; text-align:left;">
+          <div class="icon">🌐</div>
+          <h3>Global Reach, Local Expertise</h3>
+          <p>Delivering world-class technology solutions tailored to your specific business context and market needs.</p>
+        </div>
+        <div class="why-item" style="margin-bottom:20px; text-align:left;">
+          <div class="icon">⚡</div>
+          <h3>Fast & Agile Delivery</h3>
+          <p>Iterative development cycles ensure you see results quickly and can adapt to change without losing momentum.</p>
+        </div>
+        <div class="why-item" style="text-align:left;">
+          <div class="icon">🔒</div>
+          <h3>Security-First Approach</h3>
+          <p>Every solution we build is designed with security and compliance baked in from day one — not as an afterthought.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Services -->
   <section id="services" class="section">
-    <h2>What We Do</h2>
+    <div class="section-center">
+      <div class="section-label">What We Do</div>
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-sub">
+        End-to-end digital solutions designed to drive growth, efficiency, and competitive advantage.
+      </p>
+    </div>
 
-    <div class="grid">
-      <div class="card">
+    <div class="services-grid">
+      <div class="service-card animate-up">
+        <div class="service-icon">🖥️</div>
         <h3>Web & App Development</h3>
-        <p>High-performance, responsive, and future-proof applications.</p>
+        <p>High-performance, responsive, and future-proof web applications and mobile apps built with modern frameworks.</p>
+        <div class="service-arrow">Learn more →</div>
       </div>
 
-      <div class="card">
+      <div class="service-card animate-up" style="transition-delay:0.1s">
+        <div class="service-icon">🏢</div>
         <h3>Enterprise Software</h3>
-        <p>Robust solutions built to scale with your business.</p>
+        <p>Robust, custom enterprise solutions built to scale with your organization and integrate seamlessly with existing systems.</p>
+        <div class="service-arrow">Learn more →</div>
       </div>
 
-      <div class="card">
+      <div class="service-card animate-up" style="transition-delay:0.2s">
+        <div class="service-icon">💡</div>
         <h3>IT Consulting</h3>
-        <p>Architecture, optimization, and strategic guidance.</p>
+        <p>Strategic architecture planning, optimization guidance, and technology roadmaps aligned to your business objectives.</p>
+        <div class="service-arrow">Learn more →</div>
       </div>
 
-      <div class="card">
+      <div class="service-card animate-up" style="transition-delay:0.3s">
+        <div class="service-icon">☁️</div>
         <h3>Cloud & Automation</h3>
-        <p>Secure cloud infrastructure and automated workflows.</p>
+        <p>Secure cloud infrastructure, DevOps pipelines, and intelligent workflow automation to reduce costs and increase velocity.</p>
+        <div class="service-arrow">Learn more →</div>
+      </div>
+
+      <div class="service-card animate-up" style="transition-delay:0.4s">
+        <div class="service-icon">🤖</div>
+        <h3>AI & Data Solutions</h3>
+        <p>Machine learning integrations, data pipelines, and AI-powered features that give your business a real competitive edge.</p>
+        <div class="service-arrow">Learn more →</div>
+      </div>
+
+      <div class="service-card animate-up" style="transition-delay:0.5s">
+        <div class="service-icon">🛡️</div>
+        <h3>Cybersecurity</h3>
+        <p>Comprehensive security audits, threat modeling, and protection strategies to keep your systems and data safe at all times.</p>
+        <div class="service-arrow">Learn more →</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us -->
+  <section id="why-us" class="section">
+    <div class="section-center">
+      <div class="section-label">Why SunvenTech</div>
+      <h2 class="section-title">Built Different</h2>
+      <p class="section-sub">We don't just build software — we build competitive advantages.</p>
+    </div>
+
+    <div class="why-grid" style="margin-top:60px;">
+      <div class="why-item animate-up">
+        <div class="icon">🎯</div>
+        <h3>Outcome-Focused</h3>
+        <p>Every decision is made with your business outcomes in mind — not just technical elegance.</p>
+      </div>
+      <div class="why-item animate-up" style="transition-delay:0.1s">
+        <div class="icon">🤝</div>
+        <h3>True Partnership</h3>
+        <p>We embed with your team and work as partners, not just vendors, throughout the entire journey.</p>
+      </div>
+      <div class="why-item animate-up" style="transition-delay:0.2s">
+        <div class="icon">🔬</div>
+        <h3>Research-Driven</h3>
+        <p>We stay ahead of trends so you don't have to — bringing cutting-edge technology to every project.</p>
+      </div>
+      <div class="why-item animate-up" style="transition-delay:0.3s">
+        <div class="icon">📈</div>
+        <h3>Scalable by Design</h3>
+        <p>Solutions architected to grow with your business — no costly rebuilds as you scale.</p>
+      </div>
+      <div class="why-item animate-up" style="transition-delay:0.4s">
+        <div class="icon">⏱️</div>
+        <h3>On-Time Delivery</h3>
+        <p>Rigorous project management ensures milestones are hit and timelines respected.</p>
+      </div>
+      <div class="why-item animate-up" style="transition-delay:0.5s">
+        <div class="icon">💬</div>
+        <h3>Transparent Communication</h3>
+        <p>You always know what's happening — real-time updates, clear timelines, zero surprises.</p>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="section glass">
-    <h2>Contact</h2>
-    <p>📧 sakthipria@gmail.com</p>
+  <section id="contact" class="section">
+    <div class="section-label">Get In Touch</div>
+    <h2 class="section-title">Let's Build Something<br/>Great Together</h2>
+    <p class="section-sub">Have a project in mind? We'd love to hear about it.</p>
+
+    <div class="contact-wrapper">
+      <div class="contact-info animate-up">
+        <h3>Ready to get started?</h3>
+        <p>
+          Reach out and tell us about your project. We typically respond within 24 hours
+          and are always happy to jump on a call to discuss your needs.
+        </p>
+
+        <div class="contact-detail">
+          <div class="icon">📧</div>
+          <span>sakthipria@gmail.com</span>
+        </div>
+        <div class="contact-detail">
+          <div class="icon">📍</div>
+          <span>India</span>
+        </div>
+        <div class="contact-detail">
+          <div class="icon">⏰</div>
+          <span>Mon–Fri, 9 AM – 6 PM IST</span>
+        </div>
+      </div>
+
+      <form class="contact-form animate-up" style="transition-delay:0.15s" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" placeholder="John" required />
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" placeholder="Doe" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="john@company.com" required />
+        </div>
+        <div class="form-group">
+          <label>Service Interested In</label>
+          <select>
+            <option value="">Select a service…</option>
+            <option>Web & App Development</option>
+            <option>Enterprise Software</option>
+            <option>IT Consulting</option>
+            <option>Cloud & Automation</option>
+            <option>AI & Data Solutions</option>
+            <option>Cybersecurity</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Tell us about your project…" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">
+          Send Message ✉️
+        </button>
+      </form>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    © 2026 SunvenTech · Future-Ready Technology
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-brand">
+          <img src="assets/logofinal.png" alt="SunvenTech" style="height:44px;" />
+          <span class="nav-title">SunvenTech</span>
+        </a>
+        <p>Building the future of technology — one solution at a time. Trusted by businesses worldwide.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+          <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+          <a href="#" class="social-link" aria-label="GitHub">⌥</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="#services">Web & App Development</a>
+        <a href="#services">Enterprise Software</a>
+        <a href="#services">IT Consulting</a>
+        <a href="#services">Cloud & Automation</a>
+        <a href="#services">AI & Data Solutions</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#about">About Us</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#contact">Contact</a>
+        <a href="login.html">Login</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 SunvenTech · Future-Ready Technology</p>
+      <p>Crafted with precision</p>
+    </div>
   </footer>
-<!-- AI Chat Widget -->
-<div class="chat-overlay" id="chatOverlay"></div>
 
-<div class="chat-widget" id="chatWidget">
-  <div class="chat-header">
-    <span>SunvenTech AI</span>
-    <button id="closeChat">✕</button>
-  </div>
+  <!-- Chat FAB -->
+  <button class="chat-fab" id="chatFab" aria-label="Open chat">
+    <span class="chat-icon">💬</span>
+    <span class="close-icon">✕</span>
+  </button>
 
-  <div class="chat-messages" id="chatMessages">
-    <div class="bot-msg">
-      Hi 👋 I’m SunvenTech AI. How can I help you today?
+  <!-- Chat widget -->
+  <div class="chat-widget" id="chatWidget">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <div class="chat-avatar">🤖</div>
+        <div>
+          <h4>SunvenTech AI</h4>
+          <p>Online · Typically replies instantly</p>
+        </div>
+      </div>
+      <button class="chat-close" id="closeChat">✕</button>
+    </div>
+
+    <div class="chat-messages" id="chatMessages">
+      <div class="bot-msg">
+        Hi 👋 I'm SunvenTech AI. How can I help you today?
+      </div>
+    </div>
+
+    <div class="chat-input">
+      <input type="text" id="chatInput" placeholder="Type your message…" />
+      <button id="sendMsg">Send</button>
     </div>
   </div>
 
-  <div class="chat-input">
-    <input type="text" id="chatInput" placeholder="Type your message…" />
-    <button id="sendMsg">Send</button>
-  </div>
-</div>
-<script src="Script.js"></script>
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
 
+  <script src="Script.js"></script>
 </body>
 </html>
