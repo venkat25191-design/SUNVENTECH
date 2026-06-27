@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return "🏢 SunvenTech builds future-ready digital solutions using modern, scalable technology. We partner with businesses worldwide to transform ideas into powerful digital experiences.";
 
     if (msg.match(/\b(contact|email|reach|touch)\b/))
-      return "📧 You can reach us at sakthipria@gmail.com — or fill out the contact form on this page!";
+      return "📧 You can reach us at sunventechnology@gmail.com — or fill out the contact form on this page!";
 
     if (msg.match(/\b(price|cost|quote|budget|rate)\b/))
       return "💬 Pricing depends on project scope and requirements. Share your project details via the contact form and we'll get back to you with a tailored quote!";
