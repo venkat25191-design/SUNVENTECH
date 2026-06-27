@@ -56,29 +56,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll(".animate-up").forEach(el => observer.observe(el));
 
-  /* ===== COUNTER ANIMATION ===== */
-  const counters = document.querySelectorAll("[data-count]");
-  const counterObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const el = entry.target;
-        const target = parseInt(el.dataset.count, 10);
-        const suffix = el.parentElement.querySelector(".stat-label").textContent.includes("%") ? "+" : "+";
-        const step = Math.max(1, Math.floor(target / 40));
-        let current = 0;
-
-        const tick = setInterval(() => {
-          current = Math.min(current + step, target);
-          el.textContent = current + suffix;
-          if (current >= target) clearInterval(tick);
-        }, 35);
-
-        counterObserver.unobserve(el);
-      }
-    });
-  }, { threshold: 0.5 });
-
-  counters.forEach(c => counterObserver.observe(c));
 
   /* ===== CHAT WIDGET ===== */
   const chatFab   = document.getElementById("chatFab");
